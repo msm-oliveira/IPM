@@ -5,6 +5,8 @@
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/estacao.css" />
+        <script src="js/dashboard.js"></script>
     </head><body>
 
 <div class="navbar navbar-default navbar-static-top">
@@ -28,10 +30,10 @@
 </div>
 <div class="section">
     <div class="container">
-        <div class="row">
+        <div class="row">       
             <div class="col-md-12">
-                <p class="text-right">Saldo Actual 10 €
-                    <br>Possuí 0 viagens em stock</p>
+                <p class="text-right">Saldo Actual <span id="saldo"></span> €
+                    <br>Possuí <span id="stock"></span> viagens em stock</p>
             </div>
         </div>
     </div>
@@ -39,7 +41,7 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6" hidden><a class="btn btn-block btn-lg btn-primary" href="QR_code.html">Gerar Bilhete</a></div>
+            <div class="col-md-6" id="gerar"><a class="btn btn-block btn-lg btn-primary" href="QR_code.html">Gerar Bilhete</a></div>
             <div class="col-md-6"><a class="btn btn-block btn-lg btn-primary" href="buyticket.html">Comprar Bilhete</a></div>
         </div>
     </div>
