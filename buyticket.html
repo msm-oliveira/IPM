@@ -1,0 +1,82 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/buyticket.js"></script>
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span>MTS</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="matilde_dashboard.html">Back</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Comprar Bilhete</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form name="myForm" role="form">
+                <div class="form-group">
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="semDesconto" checked="checked" id="semdesc"/> Sem Desconto
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="senior" id="senior"/> Sénior
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="sub23" id="sub23"/> Sub-23
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="sub18" id="sub18"/> Sub-18
+                    </div>
+                </div>
+             
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-2">
+                      <label for="inputEmail3" class="control-label">Quantidade</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="number" class="form-control" id="inputEmail3" placeholder="Quantidade" value="0"></input>
+                    </div>
+                    <div class="col-sm-2">
+                      <label for="outputTotal" class="control-label">Total</label>
+                    </div>
+                    <div class="col-sm-4">
+                      <output type="text" class="form-control" id="outputTotal" placeholder="Total"></output>
+                    </div>
+                </div>
+            </form>
+              </form> 
+          </div>
+        </div>
+      </div>
+    </div><div class="section"><div class="container"><div class="row"><div class="col-md-12"><a class="btn btn-primary" href="matilde_boughtticket.html">Comprar</a></div></div></div></div>
+  
+
+</body></html>
