@@ -1,0 +1,29 @@
+/* line 14, ../sass/examples.scss */
+.clock-container .progressbar-text {
+  font-size: 60px;
+  margin-left: 100%;
+  color: #61b3de;
+}
+
+.clock-container {
+  width: 100px;
+  height: 100px;
+  margin-left: 40%;
+}
+
+svg{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#arrow{
+  font-size: 20px;
+}
+
+/*Cores da tabela*/
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color:  #f8f8f8;
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: 	#b2cecf;
+}
