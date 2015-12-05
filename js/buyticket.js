@@ -61,6 +61,10 @@ $(document).ready(function(){
         else
             alert("O número de bilhetes a comprar tem de ser superior a 0 ou não tem dinheiro suficiente para os comprar.");
     });
+    
+    $("#cancel").click(function(){
+        window.location.href = "matilde_dashboard.html";
+    })
 });
 
  /* if ($("#semdesc").prop("checked", true))

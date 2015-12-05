@@ -8,7 +8,19 @@ body {
     padding:0px !important;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    /* height: 100px; */
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
 
+#navbar-ex-collapse > ul > li:hover {
+    border-left:1px solid #3B7DB7 !important;
+}
 
 body > div.section > div.container {
     

@@ -20,11 +20,20 @@
           <a class="navbar-brand" href="index.html"><span>MTS</span></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="matilde_dashboard.html">Back</a>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="estacao_actual.html">Próximo Metro</a>
+              </li>
+              <li>
+                <a href="linha_estacao.html">Mapa da Rede</a>
+              </li>
+              <li>
+                <a href="http://www.jtmoraipm.tk/">Contactos</a>
+              </li>
+              <li>
+                <a href="matilde_dashboard.html">Voltar</a>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
@@ -42,18 +51,21 @@
         <div class="row">
           <div class="col-md-12">
             <form name="myForm" role="form">
-                <div class="form-group">
-                    <div class="radio">
-                        <input type="radio" name="tipo" value="semDesconto" checked="checked" id="semdesc"/> Sem Desconto
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="tipo" value="senior" id="senior"/> Sénior
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="tipo" value="sub23" id="sub23"/> Sub-23
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="tipo" value="sub18" id="sub18"/> Sub-18
+                <h3>Tipo de Desconto:</h3>
+                <div class="form-group" >
+                    <div>
+                        <div class="radio">
+                            <input type="radio" name="tipo" value="semDesconto" checked="checked" id="semdesc"/> Sem Desconto
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="tipo" value="senior" id="senior"/> Sénior
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="tipo" value="sub23" id="sub23"/> Sub-23
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="tipo" value="sub18" id="sub18"/> Sub-18
+                        </div>
                     </div>
                 </div>
              
@@ -77,7 +89,20 @@
           </div>
         </div>
       </div>
-    </div><div class="section"><div class="container"><div class="row"><div class="col-md-12"><a class="btn btn-primary" id="buy">Comprar</a></div></div></div></div>
-  
-
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-2"><a class="btn btn-primary" id="buy">Comprar</a></div>
+                            <div class="col-sm-2"><a class="btn btn-primary" id="cancel">Cancelar</a></div>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="footer">© Copyright Joao Tomas, Miguel Oliveira, Rui Alves - 2015</div>
 </body></html>

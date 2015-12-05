@@ -3,10 +3,6 @@
 //app.html
 $(document).ready(function(){
 
-  $("#pesq").click(function() {
-    $("#alterarCalendario").toggle();
-  });
-
 //DatePicker
   $('#datePicker').datepicker({
   		changeMonth: true,
@@ -16,6 +12,7 @@ $(document).ready(function(){
   		maxDate: 365,
   		minDate: 0
 	});
+    $('#datePicker').datepicker( "setDate", new Date());
 
 //TimePicker
   $('#timePicker').timepicker({
@@ -30,6 +27,7 @@ $(document).ready(function(){
       deselectButtonText: 'Deseleccionar',
       showDeselectButton: true
   });
+    $('#timePicker').timepicker('setTime', new Date());
 
 
   //Nao permitir que se selecione a mesma estacao 2x
@@ -72,6 +70,21 @@ $(document).ready(function(){
 });
 
   $(".go").eq(1).trigger('change');
-
-
+    
+    $("#plan").click(function(){
+        console.log($("#select1").val());
+        console.log($("#select2").val());
+        if (!$("#select1").val())
+            alert("Escolha uma estação de origem.");
+        else if (!$("#select2").val())
+            alert("Escolha uma estação de destino.");
+        else
+        {
+            localStorage.setItem("origem",$("#select1").val());
+            localStorage.setItem("destino",$("#select2").val());
+            localStorage.setItem("back",1);
+            localStorage.setItem("time",$("input[name=horas]").val());
+            window.location.href = "planear_viagem.html";
+        }
+    })
 });

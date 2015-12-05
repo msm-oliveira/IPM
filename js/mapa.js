@@ -58,4 +58,20 @@ $(document).ready(function(){
   select2.onchange = function() {
       preventDupes.call(this, select1, this.selectedIndex );
   };
+    
+        
+    $("#planit").click(function(){
+        console.log($("#select1").val());
+        if (!$("#select1").val())
+            alert("Escolha uma estação de origem.");
+        else if (!$("#select2").val())
+            alert("Escolha uma estação de destino.");
+        else
+        {
+            localStorage.setItem("origem",$("#select1").val());
+            localStorage.setItem("destino",$("#select2").val());
+            localStorage.setItem("back",2);
+            window.location.href = "planear_viagem.html";
+        }
+    });
 });
