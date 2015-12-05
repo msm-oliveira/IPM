@@ -12,6 +12,8 @@
   <!--<link rel="stylesheet" href="css/jquery-ui-1.10.0.custom.min.css" type="text/css" />-->
 
   <link rel="stylesheet" href="css/jquery.ui.timepicker.css?v=0.3.3" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
   <script type="text/javascript" src="js/jquery.ui.timepicker.js?v=0.3.3"></script>
 
   <script src="js/app.js"></script>
@@ -39,7 +41,7 @@
             <a href="estacao_actual.html">Próximo Metro</a>
           </li>
           <li>
-            <a href="linha_estacao.html">Rede Metro</a>
+            <a href="linha_estacao.html">Mapa da Rede</a>
           </li>
           <li>
             <a href="login.html">Bilhetes</a>
@@ -107,11 +109,10 @@
                     <option>Corroios</option>
                 </select>
             </div>
-            <p class="text-right">
-              <a href="#" id="pesq">Alterar Horas</a>
-            </p>
+              <br></br>
+            <br></br>
 
-            <div class="form-group" id="alterarCalendario" style="display: none">
+            <div class="form-group" style="text-align:center">
               <div class="col-sm-2">
                 <label for="inputEmail3" class="control-label">Dia</label>
               </div>
@@ -129,11 +130,13 @@
           </form>
         </div>
       </div>
-        <form role="form" action="planear_viagem.html">
-            <div>
-                <button type="submit" class="btn btn-primary text-center">Planear</button>
+        <!--<form role="form" action="planear_viagem.html">-->
+        <br></br>
+        <br></br>
+        <div>
+                <button type="button" class="btn btn-primary text-center" id="plan">Planear</button>
             </div>
-        </form>
+        <!--</form>-->
       <!--  <script>
             function preventDupes( select, index ) {
                 var options = select.options,
@@ -161,7 +164,7 @@
         </script>-->
     </div>
   </div>
-
+    <div id="footer">© Copyright Joao Tomas, Miguel Oliveira, Rui Alves - 2015</div>
 </body>
 
 </html>
